@@ -1,0 +1,28 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <locale.h>
+
+int main()
+
+{
+
+int idade;
+setlocale(LC_ALL,"portugues");
+printf ("Iforme a sua idade");
+scanf ("%d", &idade);
+
+if ((idade>=16 && idade <18) || (idade>70))
+{
+    printf("\n\n Seu voto e facultativo \n\n");
+}
+else if (idade<16)
+{
+    printf("\n\n Proibido votar \n\n");
+}
+else
+{
+    printf("\n\n Voto obrigatorio \n\n");
+}
+
+system("pause");
+}
